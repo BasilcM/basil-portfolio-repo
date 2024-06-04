@@ -1,0 +1,117 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills-grid div {
+    width: 30%;
+}
+
+.skills-grid h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.skills-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-grid ul li {
+    padding: 5px 0;
+}
+
+.timeline {
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.project img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
