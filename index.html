@@ -16,7 +16,13 @@
     
       form.addEventListener('submit', e => {
         e.preventDefault();
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          const formData = new FormData(form);
+          const deviceInfo = navigator.userAgent;
+          const browserInfo = navigator.appVersion;
+          formData.append('device_info', deviceInfo);
+          formData.append('browser_info', browserInfo);
+          
+        fetch(scriptURL, { method: 'POST', body: formData})
           .then(response => console.log('Success!', response))
           .catch(error => console.error('Error!', error.message));
       });
