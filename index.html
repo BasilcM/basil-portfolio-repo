@@ -49,9 +49,64 @@
         <div class="container">
             <img src="https://media.licdn.com/dms/image/C5603AQF2afCY2pao2Q/profile-displayphoto-shrink_800_800/0/1608685857816?e=1723075200&v=beta&t=y589wKu05KTxfB2tVHX3Phg1BVUw3NVnKx573EN0xAo" alt="Basil Chacko Mathew" class="profile-img">
             <h3>Welcome to My Portfolio</h3>
-            <p>I am a Data Scientist with 5 years of experience in Data Science, Machine Learning, Web Development, and Automation projects.</p>
+            <p>I am a Data Scientist with <script>document.write(new Date().getFullYear() - 2019);</script> years of experience in Data Science, Machine Learning, Web Development, and Automation projects.</p>
         </div>
     </section>
+
+<!--     <section id="linkedin-posts" class="section">
+        <div class="container">
+          <h2>Latest LinkedIn Posts</h2>
+          <div id="linkedInPosts"></div>
+        </div>
+      </section> 
+<script>
+    // Replace placeholders with your actual LinkedIn API credentials/URL (if needed)
+    const linkedInApiUrl = "https://api.linkedin.com/v2/feed?q=YOUR_LINKEDIN_QUERY&format=json&oauth2_token=YOUR_LINKEDIN_ACCESS_TOKEN";
+
+    // Function to fetch and display LinkedIn posts (optional, if you want to keep LinkedIn integration)
+    async function fetchLinkedInPosts() {
+      try {
+        const response = await fetch(linkedInApiUrl);
+        const data = await response.json();
+        const posts = data.values; // Adjust based on API response structure
+
+        if (posts && posts.length > 0) {
+          const linkedInPostsContainer = document.getElementById("linkedInPosts");
+          linkedInPostsContainer.innerHTML = ""; // Clear existing content
+          linkedInPostsContainer.innerHTML = "<h3>Latest LinkedIn Posts</h3>";
+
+          for (let i = 0; i < posts.length; i++) {
+            const post = posts[i];
+            const postElement = document.createElement("div");
+            postElement.classList.add("post");
+            postElement.innerHTML = `
+              <a href="${post.url}">${post.title}</a>
+              <p>${post.summary}</p>
+            `;
+            linkedInPostsContainer.appendChild(postElement);
+          }
+        } else {
+          document.getElementById("linkedInPosts").textContent = "No LinkedIn posts found.";
+        }
+      } catch (error) {
+        console.error("Error fetching LinkedIn posts:", error);
+      }
+    }
+
+    // Call the LinkedIn post fetching function if needed (uncomment to enable)
+    // fetchLinkedInPosts();
+  </script>
+-->
+    
+      <section id="medium-articles" class="section">
+    <div class="container">
+      <h2>Latest Medium Articles</h2>
+      <div id="mediumArticles">
+        <p>Check out my latest articles on <a href="https://medium.com/@basilchackomathew">Medium</a>!</p>
+      </div>
+    </div>
+  </section>
+
 
 <!--     <section id="contact" class="section">
         <div class="container">
