@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #6295A2;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -46,7 +46,7 @@ header nav ul li a {
 }
 
 .profile-img {
-    width: 150px;
+    width: 200px;
     border-radius: 50%;
     display: block;
     margin: 20px auto;
